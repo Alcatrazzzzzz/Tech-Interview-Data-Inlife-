@@ -9,6 +9,7 @@ const TablePage = ({ state, cart, setCart, activeHeading }) => {
       element.goods.forEach((element) => {
         subContent.push(
           <TableDataRow
+            key={element.rid}
             setCart={(element) => setCart(element)}
             cart={cart}
             data={element}

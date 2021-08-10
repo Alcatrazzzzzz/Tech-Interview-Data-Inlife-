@@ -55,6 +55,7 @@ function App() {
 
     listContent.push(
       <li
+        key={"All"}
         onClick={() => {
           setActiveHeading("Все");
         }}
@@ -70,7 +71,7 @@ function App() {
     );
     state.data.forEach((element) => {
       routes.push(
-        <Route path={`/${element.urlalias}`}>
+        <Route key={element.rid} path={`/${element.urlalias}`}>
           <TablePage
             activeHeading={activeHeading}
             state={state}
@@ -82,6 +83,7 @@ function App() {
 
       listContent.push(
         <li
+          key={element.rid}
           onClick={() => {
             setActiveHeading(element.rname);
           }}
@@ -107,6 +109,7 @@ function App() {
           <Switch>
             <Route exact path="/">
               <TablePage
+                key="/"
                 activeHeading={activeHeading}
                 state={state}
                 cart={cart}
