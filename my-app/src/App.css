@@ -1,0 +1,89 @@
+.main-heading {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 70%;
+  margin-left: auto;
+  height: fit-content;
+}
+
+td {
+  padding: 10px;
+  border: solid black;
+  border-width: 0px 1px;
+}
+
+.table-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 100px;
+}
+.section-heading {
+  border: 1px solid black;
+}
+
+.section-heading h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.headings-row {
+  border: 1px solid black;
+}
+
+.cart-bar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  background-color: rgb(238, 191, 104);
+  width: 100%;
+  font-size: 18px;
+}
+
+.cart-content {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cart-addtobtn {
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.heading-list {
+  width: 20%;
+}
+
+.heading-list ul {
+  list-style: none;
+}
+
+.heading-list li {
+  cursor: pointer;
+}
+
+.heading-list li a {
+  text-decoration: none;
+  color: black;
+}
+.heading-list li a:visited {
+  color: none;
+}
+
+.heading-list li a:hover {
+  color: rgb(238, 191, 104);
+}
